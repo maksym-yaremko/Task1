@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApplication68
+namespace InheritanceTask.Classes
 {
-    class Circle: Figure
+    public class Circle: Figure
     {
-        public double radius;
+        protected double radius;
         public double Radius
         {
             get
@@ -20,6 +20,7 @@ namespace ConsoleApplication68
                 if (value <= 0)
                 {
                     Console.WriteLine("radius can not be <=0");
+                    radius = 0;
                 }
                 else
                 {
@@ -36,9 +37,9 @@ namespace ConsoleApplication68
         {
             return PI * Math.Pow(radius, 2);
         }
-        public override double Perimetr()
+        public override double Perimeter()
         {
-            return 2 * PI * Math.Pow(radius, 2);
+            return 2 * PI * radius;
         }
         public override double Volume()
         {

@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApplication68
+namespace InheritanceTask.Classes
 {
-    class Parallelepiped:Rectangle
+    public class Parallelepiped:Rectangle
     {
-        public double height;
+        protected double height;
         public double Height
         {
             get
