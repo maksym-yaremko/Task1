@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApplication68
+namespace InheritanceTask.Classes
 {
-    class Cylinder:Circle
+    public class Cylinder:Circle
     {
-        public double height;
+        protected double height;
         public double Height
         {
             get
@@ -20,6 +20,7 @@ namespace ConsoleApplication68
                 if (value <= 0)
                 {
                     Console.WriteLine("height can not be <=0");
+                    height = 0;
                 }
                 else
                 {
@@ -27,10 +28,10 @@ namespace ConsoleApplication68
                 }
             }
         }
-        public Cylinder(string countourColor, string fillCollor, double widht, double RADIUS,double HEIHGT) 
+        public Cylinder(string countourColor, string fillCollor, double widht, double RADIUS,double HEIGHT) 
             : base(countourColor, fillCollor, widht, RADIUS)
         {
-            this.Height = HEIHGT;
+            this.Height = HEIGHT;
         }
         public override double Area()
         {

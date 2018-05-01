@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApplication68
+namespace InheritanceTask.Classes
 {
-    class Rectangle : Figure
+    public class Rectangle : Figure
     {
         public double side_a, side_b;
         public double Side_A
@@ -55,7 +55,7 @@ namespace ConsoleApplication68
         {
             return side_a*side_b;
         }
-        public override double Perimetr()
+        public override double Perimeter()
         {
             return 2*(Side_A+Side_B);
         }

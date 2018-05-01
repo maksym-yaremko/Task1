@@ -4,38 +4,38 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApplication68
+namespace InheritanceTask.Classes
 {
     class Calculation
     {
         public double AreaCalulation(List<Figure> figure)
         {
-            double AreaSum = 0;
+            double areaSum = 0;
             for (int i = 0; i < figure.Count; i++)
             {
-                AreaSum = AreaSum + figure[i].Area();
+                areaSum = areaSum + figure[i].Area();
             }
-            return AreaSum;
+            return areaSum;
         }
 
         public double PerimetrCalculation(List<Figure> figure)
         {
-            double PerimetrSum = 0;
+            double perimetrSum = 0;
             for (int i = 0; i < figure.Count; i++)
             {
-                PerimetrSum = PerimetrSum + figure[i].Perimetr();
+                perimetrSum = perimetrSum + figure[i].Perimeter();
             }
-            return PerimetrSum;
+            return perimetrSum;
         }
 
         public double VolumeCalculation(List<Figure> figure)
         {
-            double VolumeSum = 0;
+            double volumeSum = 0;
             for (int i = 0; i < figure.Count; i++)
             {
-                VolumeSum = VolumeSum + figure[i].Volume();
+                volumeSum = volumeSum + figure[i].Volume();
             }
-            return VolumeSum;
+            return volumeSum;
         }
 
         public void ShowInfo(List<Figure> figure)
