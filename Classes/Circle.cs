@@ -31,7 +31,7 @@ namespace InheritanceTask.Classes
         public Circle(string countourColor, string fillCollor, double widht,double RADIUS)
             :base(countourColor,fillCollor,widht)
         {
-            this.Radius = RADIUS;
+            this.radius = RADIUS;
         }
         public override double Area()
         {
