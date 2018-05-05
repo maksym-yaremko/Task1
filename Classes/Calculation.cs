@@ -49,7 +49,7 @@ namespace InheritanceTask.Classes
 
         public void OutputCalculation()
         {
-            List<Figure> figures = new List<Figure>();
+            var figures = new List<Figure>();
             figures.Add(new Circle("black", "white", 5.6, 10));
             figures.Add(new Rectangle("purple", "pink", 2.4, 3, 4));
             figures.Add(new Cylinder("blue", "yellow", 4.4, 5, 6));
