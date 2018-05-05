@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,23 +16,29 @@ namespace InheritanceTask.Classes
             {
                 return radius;
             }
-            set
+            set 
             {
-                if (value <= 0)
+                try
                 {
-                    Console.WriteLine("radius can not be <=0");
-                    radius = 0;
+                    if (value <= 0)
+                    {
+                        throw new ArgumentException("Error: Radius cannot be less than zero");
+                    }
+                    else
+                    {
+                        radius = value;
+                    }
                 }
-                else
-                {
-                    radius = value;
+                catch (ArgumentException exception)
+                { 
+                    Console.WriteLine(exception.Message);
                 }
             }
         }
         public Circle(string countourColor, string fillCollor, double widht,double RADIUS)
             :base(countourColor,fillCollor,widht)
         {
-            this.radius = RADIUS;
+            this.Radius = RADIUS;
         }
         public override double Area()
         {
