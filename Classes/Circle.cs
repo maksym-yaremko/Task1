@@ -49,7 +49,7 @@ namespace InheritanceTask.Classes
         {
             Console.WriteLine("Circle:");
             base.Show();
-            Console.WriteLine("radius = "+ Radius);
+            Console.WriteLine($"radius = {Radius}");
         }
     }
 }
